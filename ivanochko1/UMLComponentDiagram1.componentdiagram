@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="26d4411f-6ff9-43ca-ac64-fdc6a344f0ef" name="UMLComponentDiagram1" linkedPackageId="0aa1840e-4d02-49eb-bf7c-66989039973c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="9ac1c050-5714-4ae2-bca0-973312fb307c" name="Клієнтська частина" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fb985cee-26b4-467a-bc5c-3bb971d68ddf" />
+        <ownedAttributesInternal>
+          <providedInterface Id="780129fb-9587-4c2d-9a00-4d0823f48bad" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="7efb0a4a-82e5-4e66-8c89-4dfbd2f588df" />
+            <type_NamedElement>
+              <interfaceMoniker Id="39c8cf83-eabd-461d-b281-ea1ffb2c7cca" LastKnownName="Interface2" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ab74ba02-95e0-44cb-8b3c-dbae71c80ea7" name="Серверна частина" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c51508cd-20ea-4e27-bd28-648639a0a831" />
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="39c8cf83-eabd-461d-b281-ea1ffb2c7cca" name="Interface2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="98f180cc-818a-4f6a-8df2-70f726df8659" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="4c6479da-ef6f-4eb5-b070-312a21235aaf" name="База даних" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d611daf8-a867-485e-aaa0-b31c7eab3827" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="0aa1840e-4d02-49eb-bf7c-66989039973c" name="ivanochko1">
+    <elementDefinition Id="df9790df-e3ab-418d-a357-e10f6890bd27" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c03be263-cd15-4e45-8511-575d85036126">
+        <profileInstance Id="79d61e3b-b47d-4cc1-a4a0-bf36b309bf7c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e19722fb-37c9-458d-b22f-d6e9be5cf3c4">
+        <profileInstance Id="0d194520-b696-4563-9afc-7e9d109de3cf" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

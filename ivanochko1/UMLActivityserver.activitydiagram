@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="496898ee-d12f-4b48-b898-a7bdb8622f8f" name="UMLActivityserver" linkedPackageId="72abc40f-6963-489a-89e7-8d3a2d101b18" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="a9c99e32-3626-412d-9953-88f22117dbd3" name="UMLActivityserver" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="8f026482-4f6c-4232-b96e-7115750aa056" />
+        <nodes>
+          <activityFinalNode Id="94f02dea-ff65-4f20-8ce9-ffdf11d60bdc" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="c3ae4f46-23f3-48d9-8205-2a56167ba189" />
+          </activityFinalNode>
+          <opaqueAction Id="c4cb0d3c-4954-4564-87eb-ee4465f4bb5f" name="зберегти дані в БД" isLeaf="false">
+            <elementDefinition Id="34a4ae70-dae3-4642-9ff2-29e9a9b20980" />
+            <flowNodeTargets>
+              <controlFlow Id="f3556bd9-4d2f-4cc6-a189-2d834d151acc" isLeaf="false">
+                <activityFinalNodeMoniker Id="94f02dea-ff65-4f20-8ce9-ffdf11d60bdc" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="5c31d6cc-80ac-449a-95a2-e402adf29600" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4a7fb6b5-8516-47df-999f-ab4cfd48a4ab" name="увійти в систему" isLeaf="false">
+            <elementDefinition Id="4d20008b-7ed7-4dd1-b458-fdda45c9cb59" />
+            <flowNodeTargets>
+              <controlFlow Id="52afc731-1b5e-408d-81c6-75dc866c357b" isLeaf="false">
+                <decisionNodeMoniker Id="c6087bea-9400-4554-88be-0fe21ca50325" LastKnownName="Decision1" />
+                <elementDefinition Id="a2915727-6873-45d6-b8e4-f8ad72f0746b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode Id="28d40e94-82dd-472d-882d-ce768f255b1b" name="Initial1" isLeaf="false">
+            <elementDefinition Id="ee1f9dd2-ea0b-49a7-918a-0d8d45f00345" />
+            <flowNodeTargets>
+              <controlFlow Id="0b5e451b-6044-4a07-ba7b-97ff42271bc8" isLeaf="false">
+                <mergeNodeMoniker Id="b7914542-1bc4-46e4-9885-085f4ebc3bb5" LastKnownName="Merge1" />
+                <elementDefinition Id="924eb757-a5ce-4015-8d79-3d00d19bf3e8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <acceptEventAction Id="fa07b95b-603a-4043-95db-78c433304e27" name="прийом інформації для входу в систему" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="3e029967-de12-4716-810c-8b34785a0229" />
+            <flowNodeTargets>
+              <controlFlow Id="404ed9e5-55c6-44e8-bb21-ea659b05f491" isLeaf="false">
+                <opaqueActionMoniker Id="4a7fb6b5-8516-47df-999f-ab4cfd48a4ab" LastKnownName="увійти в систему" />
+                <elementDefinition Id="e531ee34-24eb-4736-9af1-abb341548d8a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <decisionNode Id="c6087bea-9400-4554-88be-0fe21ca50325" name="Decision1" isLeaf="false">
+            <elementDefinition Id="e2ec3225-baf9-41c1-8bec-1844b154aeca" />
+            <flowNodeTargets>
+              <controlFlow Id="f5ad8939-f3a8-49ea-bbff-1d7a09fb671b" guard="Вхід вдалий" isLeaf="false">
+                <acceptEventActionMoniker Id="7ea2f518-817c-480b-9959-1204784e96f7" LastKnownName="прийом інформіції про транзакцію" />
+                <elementDefinition Id="26b8c756-458f-4cbe-a903-f89077f388b9" />
+              </controlFlow>
+              <controlFlow Id="4ffeeb5d-fdeb-4aa7-b46c-21c52f0ce6af" guard="Вхід невдалий" isLeaf="false">
+                <mergeNodeMoniker Id="b7914542-1bc4-46e4-9885-085f4ebc3bb5" LastKnownName="Merge1" />
+                <elementDefinition Id="7918552c-57e6-4f0b-8950-5de64d1a2709" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <acceptEventAction Id="7ea2f518-817c-480b-9959-1204784e96f7" name="прийом інформіції про транзакцію" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="2935154c-40c3-4030-8fe6-019460198062" />
+            <flowNodeTargets>
+              <controlFlow Id="c74f7fae-a0ef-45e3-8cf6-fbf6742a9d71" isLeaf="false">
+                <opaqueActionMoniker Id="c4cb0d3c-4954-4564-87eb-ee4465f4bb5f" LastKnownName="зберегти дані в БД" />
+                <elementDefinition Id="0543a947-2b75-4b88-8962-7d3376887c98" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <mergeNode Id="b7914542-1bc4-46e4-9885-085f4ebc3bb5" name="Merge1" isLeaf="false">
+            <elementDefinition Id="1345ca81-9e09-4516-af01-d6c455e6288b" />
+            <flowNodeTargets>
+              <controlFlow Id="bce53743-8b67-4e63-864c-60e60c54dbc9" isLeaf="false">
+                <acceptEventActionMoniker Id="fa07b95b-603a-4043-95db-78c433304e27" LastKnownName="прийом інформації для входу в систему" />
+                <elementDefinition Id="8ef6fda7-dc36-4561-8bc8-bef0ad721cdb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="72abc40f-6963-489a-89e7-8d3a2d101b18" name="ivanochko1">
+    <elementDefinition Id="df9790df-e3ab-418d-a357-e10f6890bd27" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f119baa3-47ea-45c9-823c-11fb08e3cf76">
+        <profileInstance Id="7b48816f-b36a-4c15-8152-7d392a12091f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b5fb75f4-2420-4db1-81a7-2c0004b5286f">
+        <profileInstance Id="54bf9b85-5dcf-4e33-86b7-7be2a6da8302" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

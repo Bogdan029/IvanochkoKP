@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="3287e61d-d85e-4316-894b-cff75d7e1d30" name="UMLActivityserver1" linkedPackageId="13bc0430-b701-42b5-897e-ae3472f80f4e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4133e5b1-1e09-466f-aa65-f0c64a9135e1">
+      <profileInstance Id="6f57fae5-7964-4db1-a631-0dc9e43fc04b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0b5a634c-b324-4b70-9cd8-2b263603a2d6">
+      <profileInstance Id="ff6bf31a-ddbd-4c20-a675-f9950d5596e7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="08d28fe0-8624-4214-a618-9b2269a7b3f2" name="UMLActivityserver1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="e8289f2e-235c-4a83-89c3-e4b42a436c8f" />
+        <nodes>
+          <initialNode Id="fa31cb94-b703-4dd6-a1c9-a0ab547e7068" name="Initial11" isLeaf="false">
+            <elementDefinition Id="3a3dc184-04f0-4724-9dfb-fe66308ea931" />
+            <flowNodeTargets>
+              <controlFlow Id="2438d4f6-2ad6-4bac-b56c-bad699b013d8" isLeaf="false">
+                <opaqueActionMoniker Id="4ba80fb3-b74d-4b08-ba9f-da67a8a1c009" LastKnownName="перевірка наявності клієнта в БД" />
+                <elementDefinition Id="7bb7a81b-687a-47e3-8809-38f5c524b2ef" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="4ba80fb3-b74d-4b08-ba9f-da67a8a1c009" name="перевірка наявності клієнта в БД" isLeaf="false">
+            <elementDefinition Id="6d0e0438-ab7e-410f-8c1d-81224c8ce2cb" />
+            <flowNodeTargets>
+              <controlFlow Id="c6d8eab4-b539-47ac-88c7-2867249d22fa" isLeaf="false">
+                <decisionNodeMoniker Id="8a5ae4f8-3228-4300-9201-d312d80c4cb9" LastKnownName="Decision11" />
+                <elementDefinition Id="036342d0-f9fa-4c81-9ef3-86eabb6e090a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8a5ae4f8-3228-4300-9201-d312d80c4cb9" name="Decision11" isLeaf="false">
+            <elementDefinition Id="4285b250-9f88-40ea-ac38-e55c47bc9c43" />
+            <flowNodeTargets>
+              <controlFlow Id="a676e17c-2acd-431a-abeb-9ce98dadcf89" guard="ні" isLeaf="false">
+                <opaqueActionMoniker Id="c83ef439-297e-4f26-bfea-4f30c3445792" LastKnownName="зареєструвати клієнта" />
+                <elementDefinition Id="95505a8f-1b47-423f-82e0-261c4cedcae9" />
+              </controlFlow>
+              <controlFlow Id="fc8058c8-76cc-4e0a-a563-b1af87ec9271" guard="так" isLeaf="false">
+                <opaqueActionMoniker Id="b5528e72-e6c7-4a59-85f8-56c8acf5e05d" LastKnownName="перевірка потреби редагувати дані про клієнта" />
+                <elementDefinition Id="9eb323a1-2840-49b9-9f6d-0b4f8150e7c9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="c83ef439-297e-4f26-bfea-4f30c3445792" name="зареєструвати клієнта" isLeaf="false">
+            <elementDefinition Id="66f7c105-6964-4aeb-9c18-ca390f41854e" />
+            <flowNodeTargets>
+              <controlFlow Id="25202861-9f46-4cdf-937f-9aa9a77c2f3d" isLeaf="false">
+                <mergeNodeMoniker Id="8ff7a0bb-7da2-4df2-b530-272117b370a4" LastKnownName="Merge11" />
+                <elementDefinition Id="a7441778-10c3-458e-95a3-2915087c662c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b5528e72-e6c7-4a59-85f8-56c8acf5e05d" name="перевірка потреби редагувати дані про клієнта" isLeaf="false">
+            <elementDefinition Id="6abdc855-0e5b-4b38-b10e-2c83638a6821" />
+            <flowNodeTargets>
+              <controlFlow Id="a835aefa-e887-4d48-bc5e-8c40db88ba8a" isLeaf="false">
+                <decisionNodeMoniker Id="951d0ec6-86bf-4803-b802-b088721f018d" LastKnownName="Decision2" />
+                <elementDefinition Id="9126bff7-0652-4385-adea-234a3e842446" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="951d0ec6-86bf-4803-b802-b088721f018d" name="Decision2" isLeaf="false">
+            <elementDefinition Id="65b15ef9-5445-488b-841f-65bf9f6b92ca" />
+            <flowNodeTargets>
+              <controlFlow Id="d5182cb6-c08d-485b-8fb8-d7ce3396ae6b" guard="ні" isLeaf="false">
+                <mergeNodeMoniker Id="8ff7a0bb-7da2-4df2-b530-272117b370a4" LastKnownName="Merge11" />
+                <elementDefinition Id="ef5bf87d-c91f-4e47-9ee8-49ee66ce552e" />
+              </controlFlow>
+              <controlFlow Id="bee0bb56-4a49-4567-908c-92be3acec768" guard="так" isLeaf="false">
+                <opaqueActionMoniker Id="7af06823-64d5-4550-85e3-ad28793d9d6a" LastKnownName="редагувати дані про клієнта" />
+                <elementDefinition Id="cf422e76-654c-41ce-818c-41c99a0baa00" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="d709a517-b417-4afe-a11d-bbef6852f06f" name="зберегти дані про клієнта" isLeaf="false">
+            <elementDefinition Id="1a5df178-38e2-4292-91b1-fc8bcf39e6b6" />
+            <flowNodeTargets>
+              <controlFlow Id="a87588ee-130f-4ca9-b795-c433fa8444c4" isLeaf="false">
+                <activityFinalNodeMoniker Id="4a46a5b8-4c12-4286-a2d6-3f9258db64cb" LastKnownName="ActivityFinal11" />
+                <elementDefinition Id="702c19ea-ddc5-4eab-9f26-9c9c1d24e495" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="4a46a5b8-4c12-4286-a2d6-3f9258db64cb" name="ActivityFinal11" isLeaf="false">
+            <elementDefinition Id="c9f633c3-13fd-44d5-815e-fa5b966ad6c8" />
+          </activityFinalNode>
+          <mergeNode Id="8ff7a0bb-7da2-4df2-b530-272117b370a4" name="Merge11" isLeaf="false">
+            <elementDefinition Id="9596c86b-be25-487d-8100-97cba285ff0c" />
+            <flowNodeTargets>
+              <controlFlow Id="3d998fff-692e-4e50-bd57-5f9c7797655d" isLeaf="false">
+                <opaqueActionMoniker Id="d709a517-b417-4afe-a11d-bbef6852f06f" LastKnownName="зберегти дані про клієнта" />
+                <elementDefinition Id="2320be37-11dc-48a0-87ac-2fba380dbf48" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="7af06823-64d5-4550-85e3-ad28793d9d6a" name="редагувати дані про клієнта" isLeaf="false">
+            <elementDefinition Id="bb5ed599-43e6-4a74-a755-afc12c67d9e8" />
+            <flowNodeTargets>
+              <controlFlow Id="48d74a3e-f978-4ecb-a383-b01472ce90a4" isLeaf="false">
+                <mergeNodeMoniker Id="8ff7a0bb-7da2-4df2-b530-272117b370a4" LastKnownName="Merge11" />
+                <elementDefinition Id="3745af2b-a140-4540-8ec9-3c027d16d4da" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="13bc0430-b701-42b5-897e-ae3472f80f4e" name="ivanochko1">
+    <elementDefinition Id="df9790df-e3ab-418d-a357-e10f6890bd27" />
+  </package>
+</activityRootModel>

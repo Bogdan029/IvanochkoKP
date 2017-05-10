@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="24de03f9-9788-4557-bc8e-3025b3c2924b" name="UMLActivityserver2" linkedPackageId="f6694484-2b8f-40a3-be08-9890eb4df32a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="613fc57f-190d-484c-a3e2-020ba5532876">
+      <profileInstance Id="87a7f212-ea61-4320-9970-8872e3c259b0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="662ea52c-ea0d-4989-bf56-bb123caed662">
+      <profileInstance Id="e13dcf75-fb48-4979-9a8c-ebf165307363" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="bf8080f5-a27a-4e2a-8b44-a90c3f2f34b2" name="UMLActivityserver2" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="b3cf44c7-e5db-41a0-8351-dde1af948943" />
+        <nodes>
+          <opaqueAction Id="cbe24d99-7b27-4288-90b1-b86fc867f1b5" name="перевірити успішність" isLeaf="false">
+            <elementDefinition Id="9f551b59-443d-4171-b6e2-f3e16cbfd556" />
+            <flowNodeTargets>
+              <controlFlow Id="a7b9e133-f113-4b54-a2d2-65c5d6a1233a" isLeaf="false">
+                <decisionNodeMoniker Id="a4b5ebcc-a1ca-4bfc-8311-5010c74abbf9" LastKnownName="Decision3" />
+                <elementDefinition Id="90ac4cad-b8d1-4fb5-8cc7-2187dd9df70c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8d1bf9b9-7c79-4774-88b1-3ed172bccdcc" name="немає стипендії" isLeaf="false">
+            <elementDefinition Id="5b9d8d87-d842-4649-8883-77b48c9188b3" />
+            <flowNodeTargets>
+              <controlFlow Id="a7d6cf12-380c-4c5c-a9e1-54691659c3ad" isLeaf="false">
+                <mergeNodeMoniker Id="eb13e589-4b91-4745-a263-ffc61cfe49f5" LastKnownName="Merge2" />
+                <elementDefinition Id="dec8fc99-2497-48b4-8384-12ed00e805e0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode Id="6688fcad-74a2-43e7-a67a-5b0e137bb5c0" name="Initial2" isLeaf="false">
+            <elementDefinition Id="c077f88f-9106-47f9-8244-57bbbaffd12e" />
+            <flowNodeTargets>
+              <controlFlow Id="59b326a2-b678-485e-863a-7d64d9263513" isLeaf="false">
+                <opaqueActionMoniker Id="cbe24d99-7b27-4288-90b1-b86fc867f1b5" LastKnownName="перевірити успішність" />
+                <elementDefinition Id="d30bf383-1313-4630-abc3-7e82b748839e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <sendSignalAction Id="2dc9356a-f818-4533-a57f-dcb69e66372b" name="нарахувати стипендію" isLeaf="false">
+            <elementDefinition Id="8ba4e109-4027-41aa-8498-6dc2df66d6ba" />
+            <flowNodeTargets>
+              <controlFlow Id="920bc89c-a6a7-48b6-9f19-c02d417dfa45" isLeaf="false">
+                <mergeNodeMoniker Id="eb13e589-4b91-4745-a263-ffc61cfe49f5" LastKnownName="Merge2" />
+                <elementDefinition Id="1a59e4fa-8790-46f5-a229-61038b6d7596" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <activityFinalNode Id="e12860db-03e2-4936-a67c-c83bcb31c637" name="ActivityFinal2" isLeaf="false">
+            <elementDefinition Id="4f29b7a8-f83a-4fea-96a5-d0bc08710a68" />
+          </activityFinalNode>
+          <decisionNode Id="a4b5ebcc-a1ca-4bfc-8311-5010c74abbf9" name="Decision3" isLeaf="false">
+            <elementDefinition Id="4b749eaa-fb86-4ecc-803d-d57a0d95eec2" />
+            <flowNodeTargets>
+              <controlFlow Id="65969265-c5df-4220-ace0-30891abbd917" guard="Є стипендія" isLeaf="false">
+                <sendSignalActionMoniker Id="2dc9356a-f818-4533-a57f-dcb69e66372b" LastKnownName="нарахувати стипендію" />
+                <elementDefinition Id="a0d7c1f3-8bae-4092-b658-ed6ea5021b79" />
+              </controlFlow>
+              <controlFlow Id="15c1d876-b8ab-4303-ab2f-5be264882fc4" guard="нема" isLeaf="false">
+                <opaqueActionMoniker Id="8d1bf9b9-7c79-4774-88b1-3ed172bccdcc" LastKnownName="немає стипендії" />
+                <elementDefinition Id="215c564d-b809-4882-b780-36bf94c9d964" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode Id="eb13e589-4b91-4745-a263-ffc61cfe49f5" name="Merge2" isLeaf="false">
+            <elementDefinition Id="b6bc4588-70c6-466c-aef1-ed121b0712c5" />
+            <flowNodeTargets>
+              <controlFlow Id="f506fefb-8763-4b7b-ae7a-8edd9c8a78fa" isLeaf="false">
+                <activityFinalNodeMoniker Id="e12860db-03e2-4936-a67c-c83bcb31c637" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="ab7eef90-d0ae-4f38-ac41-b34070e5edb8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="f6694484-2b8f-40a3-be08-9890eb4df32a" name="ivanochko1">
+    <elementDefinition Id="df9790df-e3ab-418d-a357-e10f6890bd27" />
+  </package>
+</activityRootModel>

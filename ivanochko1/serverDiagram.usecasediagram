@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="e4778814-6810-4adf-aac8-974bf4aad331" name="serverDiagram" linkedPackageId="89d283b7-66eb-49ac-b0df-f9a97e09894e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="5a44a429-959c-43d4-9789-511a9a78b2e9">
+      <elementDefinition Id="0ec17fcc-763a-4dd9-a0c0-e6d63bf6875e" />
+      <body>Успішність втановлюється в деканаті</body>
+      <annotatedElements>
+        <useCaseMoniker Id="f458b465-6b70-422f-9472-2b856d6aa070" LastKnownName="встановити успішність" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="5530b7c0-2bed-41e2-8e02-675c7d32992a" name="Сервер" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8b77540d-49ba-436a-860d-8adde507b924" />
+        <targetEnds>
+          <association Id="538d40e7-678c-4b70-96da-801428a9449d" isDerived="false" sourceEndRoleName="Сервер" targetEndRoleName="прийом даних від клієнта" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ae56da96-8128-4cf3-a378-bf469c55ed8d" LastKnownName="прийом даних від клієнта" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="07e78ad2-00a4-4b08-94de-3c2d770f4fc2" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="494174cb-f8a7-47da-8240-e9692bc9bc38" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2774caf0-86d6-4743-a687-fdef6ef51a66" name="прийом даних від клієнта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8d575ad6-58c7-43e3-b73d-bc4bfa07b892" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fca1aa51-c124-4fbd-bb07-367daeb31457" />
+          </association>
+          <association Id="0530f472-a57a-4c0f-b469-b72d72691554" isDerived="false" sourceEndRoleName="Сервер" targetEndRoleName="внесення нових та редагування клієнтів" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a72d061c-b4e8-4cd1-abac-d9343c7516f9" LastKnownName="внесення нових та редагування клієнтів" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0158d507-4fa2-4072-95a9-186a9c5c76bc" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d868b3de-4cfc-46fe-8856-e10ec8c8ce83" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3a39db72-be00-4ce7-af36-742971830c25" name="внесення нових та редагування клієнтів" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d1d3bf69-0de4-4f38-b7e3-d87a42243893" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eaa0c139-ca92-47a4-9382-2c52c82ed2e6" />
+          </association>
+          <association Id="9e1fc286-547a-46a1-8d51-e3fd386551fa" isDerived="false" sourceEndRoleName="Сервер" targetEndRoleName="зберігання даних про клієнта" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="100240f5-ba78-44ad-99f1-eff9eeb4709d" LastKnownName="зберігання даних про клієнта" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="962aeaf1-8d41-4341-bb52-f8b18bc8ff41" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="73c90706-ad62-41a6-8b80-cf5f56073d3d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="71e0dae2-0eaa-435a-9da2-7b49e2eedc8c" name="зберігання даних про клієнта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f7b177e7-194a-46fa-9d39-7d27339f26d1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2def24b2-1834-4074-9917-766e07d5411e" />
+          </association>
+          <association Id="9a4c989e-e936-41b6-8fa4-f65cdae5c263" isDerived="false" sourceEndRoleName="Сервер" targetEndRoleName="встановити успішність" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f458b465-6b70-422f-9472-2b856d6aa070" LastKnownName="встановити успішність" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e65ea3b-4cb0-49cc-b960-103fb01fa14e" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cb3582aa-3bf3-4aef-afac-c9faf60868e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="65b1c8be-4567-4dc9-a2b2-740c20be18a0" name="встановити успішність" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="459e6aaf-2db1-4680-b66c-af039e2feaf0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0745ce60-3636-4b70-9089-f003774766c4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a72d061c-b4e8-4cd1-abac-d9343c7516f9" name="внесення нових та редагування клієнтів" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="78aa706b-4703-45e7-ab3b-0af3f0460b96" />
+        <targetEnds>
+          <association Id="fbdb1ba3-f148-4cd3-9236-b12f8213c396" isDerived="false" sourceEndRoleName="внесення нових та редагування клієнтів" targetEndRoleName="База даних" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="239f6a69-b052-4cbf-919b-35d49d475922" LastKnownName="База даних" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6dc3f4ae-8c7c-4f5c-8b94-371227308e07" name="внесення нових та редагування клієнтів" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9c935054-71c7-44bf-8ff8-76291f4c5602" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="460a3a9b-8735-4203-95c0-2b1b2654bd21" name="База даних" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="837b31b4-064a-4ea5-b74e-bb8cfb876f31" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2525d57a-345b-4feb-b1bd-54d72fe7d4e3" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="100240f5-ba78-44ad-99f1-eff9eeb4709d" name="зберігання даних про клієнта" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2d17e43a-6c0f-44f8-9d93-8a1012338bc9" />
+        <targetEnds>
+          <association Id="4181b935-2cb6-4561-9322-e4e859343fa5" isDerived="false" sourceEndRoleName="зберігання даних про клієнта" targetEndRoleName="База даних" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="239f6a69-b052-4cbf-919b-35d49d475922" LastKnownName="База даних" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d405f132-0af7-44a1-8560-472804f72431" name="зберігання даних про клієнта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ad0e2d80-3203-452b-86de-dd81ff2c9718" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69d0baf8-9e1b-4a91-94db-6bc6bab1fffc" name="База даних" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="960359ed-8f5f-420b-b049-f089932c580f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9664479a-f6f4-4521-92bc-5ad7ea00c295" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ae56da96-8128-4cf3-a378-bf469c55ed8d" name="прийом даних від клієнта" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94e95e2c-5027-4693-a633-9a1cfba38fd7" />
+        <targetEnds>
+          <association Id="6bd0fa9c-a2c4-4601-b231-2f081b90a450" isDerived="false" sourceEndRoleName="прийом даних від клієнта" targetEndRoleName="База даних" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="239f6a69-b052-4cbf-919b-35d49d475922" LastKnownName="База даних" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f7c7c2d9-1678-44c1-8a5a-e1ec4d54d389" name="прийом даних від клієнта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d6a6e6a8-7a0b-4129-b4d2-fe2f0b7c0195" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="32c583fe-48ab-4639-941c-e17fffa1cfee" name="База даних" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8c4da6d0-7d16-4549-b5de-7be125bafc9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5b91a201-5170-4f9a-8991-01d21642f589" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="acfd93d3-93fd-4061-8418-83d82d2107dd" name="прийом інформації для входу в систему" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="848873fa-83c8-4057-8286-2746623382a4" />
+        <generalsInternal>
+          <generalization Id="bd4482da-1e40-487b-8a2f-b170d4fd0191" isSubstitutable="false">
+            <useCaseMoniker Id="ae56da96-8128-4cf3-a378-bf469c55ed8d" LastKnownName="прийом даних від клієнта" />
+            <elementDefinition Id="185bb428-37aa-4d26-ab2d-dccbfd7b770d" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e4a3f764-61b7-47a5-8d09-67f3d2b1220e" name="прийом інформації про транзакцію" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2ba233ad-6454-4983-bdf6-05fe3b996758" />
+        <generalsInternal>
+          <generalization Id="96fad6d5-ecc3-4edb-807e-c8ed498c0648" isSubstitutable="false">
+            <useCaseMoniker Id="ae56da96-8128-4cf3-a378-bf469c55ed8d" LastKnownName="прийом даних від клієнта" />
+            <elementDefinition Id="0b73d0c4-d712-4f06-8bdb-438dfc218282" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="239f6a69-b052-4cbf-919b-35d49d475922" name="База даних" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="76a1809f-7352-4b1c-8c7c-0a200798bcc4" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f458b465-6b70-422f-9472-2b856d6aa070" name="встановити успішність" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="13902abd-6020-44c9-bf21-395b8f54b49c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="54835708-b476-4368-be4f-5bd0592b1efd" name="нарахувати стипендію" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="82864fd8-fc31-4650-8e81-662932cbdafb" />
+        <generalsInternal>
+          <generalization Id="1cef1a32-3eb9-47fd-9c61-c2026919f0d9" isSubstitutable="false">
+            <useCaseMoniker Id="f458b465-6b70-422f-9472-2b856d6aa070" LastKnownName="встановити успішність" />
+            <elementDefinition Id="511edcb3-960b-4007-8b33-8c0fd0fc0a98" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="89d283b7-66eb-49ac-b0df-f9a97e09894e" name="ivanochko1">
+    <elementDefinition Id="df9790df-e3ab-418d-a357-e10f6890bd27" />
+    <profileInstances>
+      <packageHasProfileInstances Id="47b3d14f-5f07-4a9e-85eb-49429c9db174">
+        <profileInstance Id="18e40b14-752c-466d-9277-32e8b42f786e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="41fd0e50-76ac-4a04-bbb2-64b7b95fffd7">
+        <profileInstance Id="8fbd51ed-fcc4-4024-8bba-23922d82d51c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

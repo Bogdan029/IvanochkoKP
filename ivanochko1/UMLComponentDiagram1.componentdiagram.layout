@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLComponentDiagram1">
+  <componentModelMoniker Id="26d4411f-6ff9-43ca-ac64-fdc6a344f0ef" />
+  <nestedChildShapes>
+    <componentShape Id="31733fa8-c675-49f2-abf3-235cd36c7cce" absoluteBounds="4, 0.625, 1.729166666666667, 1.1375000000000002" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="9ac1c050-5714-4ae2-bca0-973312fb307c" LastKnownName="Клієнтська частина" />
+      <relativeChildShapes>
+        <providedInterfaceShape Id="99f71fd8-c8ff-476b-a9b9-2fd95d568cc0" absoluteBounds="5.4375, 1.7625000000000002, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="780129fb-9587-4c2d-9a00-4d0823f48bad" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+    <componentShape Id="f91cd3ad-3617-4cfa-b2e0-b10374641315" absoluteBounds="3.375, 2.25, 2.8604165077209469, 2.20625" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="ab74ba02-95e0-44cb-8b3c-dbae71c80ea7" LastKnownName="Серверна частина" />
+    </componentShape>
+    <componentShape Id="315f54c8-0e3c-41f8-8399-a45ba28d62de" absoluteBounds="3.875, 3, 1.739583333333333, 1.3041666666666671" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="4c6479da-ef6f-4eb5-b070-312a21235aaf" LastKnownName="База даних" />
+    </componentShape>
+  </nestedChildShapes>
+</componentDiagram>

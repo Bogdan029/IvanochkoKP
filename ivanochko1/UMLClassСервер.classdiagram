@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="314d5f38-3086-4b4c-a95b-a32c6ec5b8d3" name="UMLClassСервер" linkedPackageId="93171bd0-9bed-4f96-b0db-f733dd819f74" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="008049ff-9eff-43d6-880e-9087db8129cd" name="Сервер" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1f86758c-74aa-4301-9e65-291cb355152d" />
+        <targetEnds>
+          <association Id="fe5e7d7d-269f-46a5-b6d8-1ed9d7975ca5" isDerived="false" sourceEndRoleName="Сервер" targetEndRoleName="БД" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3461c868-74c2-491a-860f-c91fb1e40fd2" LastKnownName="БД" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="297f2da6-b1a2-4b63-9e30-077459d15630" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="16156f2f-d20c-4d6f-9766-b706f10e2099" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c796992b-841b-440b-8c62-407ec6ad33da" name="БД" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="19a5da65-0e7e-4473-8da5-fe4ab72c2966" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="19d92634-161e-4c94-adf7-b052f1ba5f73" />
+          </association>
+          <association Id="a9396ac0-73d8-48af-92dd-2a59536d1684" isDerived="false" sourceEndRoleName="Сервер" targetEndRoleName="Нарахуання" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0e531f2d-e137-4f2d-9b67-6ae6a3775322" LastKnownName="Нарахуання" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c98a21d2-f4bc-4400-8afe-72294c57e9c4" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6acbe20d-d981-4847-a4d3-1893c5fb9f70" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c33f557a-df76-4ec3-8adc-cae747a1e03c" name="Нарахуання" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="938505de-250f-4cf0-bbc1-975f7b3405a2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dec40824-1b7a-4cef-aae7-be5ed0c2b958" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="1f1a48bd-81e2-4646-823d-ece2e333230b" name="База даних" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cc1b3074-26a0-441a-87e8-fed05bc35d88" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a484b85b-1c8b-4dd7-98c8-26af96b5faed" name="Прийом даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3768be0e-38e1-486a-a580-1832b0609c48" />
+          </operation>
+          <operation Id="4fb3ac71-08cd-4dd1-b92a-50f4869a7d9d" name="Передача даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f4931c7c-a7e4-479b-9e2e-14a7b8536e1e" />
+          </operation>
+          <operation Id="2fde1f40-d824-4af8-a2b2-9335900b7868" name="Встановлення успішності" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2ba19550-aed6-4593-9826-92ab6ff9ce59" />
+          </operation>
+          <operation Id="3b328985-bceb-4999-8eb5-74f2e3f0e61b" name="нарахування стипендії" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="99112882-0514-4ebc-a2f9-fd9fc3904feb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3461c868-74c2-491a-860f-c91fb1e40fd2" name="БД" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="618c83b3-0380-4a02-ae5b-a39476bc1670" />
+        <ownedAttributesInternal>
+          <property Id="f4f587ca-077d-4785-94ba-ee9e9d693074" name="Дані" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d3389e41-0195-4d45-b06e-21fb252a8fd1" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="76dcf878-575d-4cd6-9210-e69a36586173" name="Збереження даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="63ed2f7a-fc76-4316-b222-bf7e583b1a09" />
+          </operation>
+          <operation Id="003f0a14-869d-4828-b213-31d97b2a1ba8" name="Прийом даних" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f60edf88-521b-4b58-99fc-df815c262c90" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0e531f2d-e137-4f2d-9b67-6ae6a3775322" name="Нарахуання" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9e9faa11-c7dd-4350-803b-10edd135509c" />
+        <ownedAttributesInternal>
+          <property Id="e35967e9-dfea-4a08-8c24-2a0bb3ec9476" name="сума нарахування" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8ec654b1-c132-4922-a8ce-e2cff6a9d1d7" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="11aef0ad-c505-47df-842f-28b4f523c193" name="нарахуання стипендії" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3f67fd46-12d3-49c7-85d9-80d0a819a5b8" />
+          </operation>
+          <operation Id="d736e16e-db9a-44e0-a1b0-f13bfb18c9ca" name="встановлення успішності" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="26f52122-d1be-4d15-a6ce-04d0a0ea1e5a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="93171bd0-9bed-4f96-b0db-f733dd819f74" name="ivanochko1">
+    <elementDefinition Id="df9790df-e3ab-418d-a357-e10f6890bd27" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ac4db44e-8b4b-4a7b-a366-ee20f8bbd80f">
+        <profileInstance Id="65e2b081-97e7-4e2b-a873-e90c2fc07a8f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2c4aabde-766e-4ea6-8635-26ecc3e71566">
+        <profileInstance Id="7fa29433-cbc5-4164-af3c-08643352cf37" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="043d1d77-e6cd-4aef-9a43-1873dd4546fa" name="klientdiagram" linkedPackageId="35bbc813-4f96-42d9-aa7a-2f529acea647" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="750d1983-1b7f-4c5e-b2c7-fcd52c018118" name="Клієнт" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="76f71104-79b0-4e6b-9df1-fee4ad719d9b" />
+        <targetEnds>
+          <association Id="c742e65c-4a29-4a05-873d-7ed0628e13de" isDerived="false" sourceEndRoleName="Клієнт" targetEndRoleName="перегляд залишку на рахунку" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bcb894a0-4ea8-4c51-adfc-c874d1bcb23b" LastKnownName="перегляд залишку на рахунку" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2504e789-5ba1-425d-8d26-7577bd05ca52" name="Клієнт" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="868a38ee-b33d-467c-a39d-69c488563e52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3237216a-8963-4904-ae71-cba9c0b1b8c9" name="перегляд залишку на рахунку" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="00808f66-93a5-485a-89a8-1d23b995ac8a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4dcb4344-de83-4926-9558-de92c9ac079a" />
+          </association>
+          <association Id="1eaf2075-955c-4e89-920b-1b904916976d" isDerived="false" sourceEndRoleName="Клієнт" targetEndRoleName="вхід в систему" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e68a8553-abcb-482a-93b4-fb3810e868ba" LastKnownName="вхід в систему" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5dec377-6a9e-4b11-91ce-453ce0f78dff" name="Клієнт" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5d8a5753-a24e-4f2a-b391-7c7b1e80d0e6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1794baf-d983-44f0-bfc0-c4e4ec7818fd" name="вхід в систему" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f96c0c16-18ac-4990-bd6c-bfd6aa03200c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7151e992-e953-4328-8cd7-72c9276f3f8d" />
+          </association>
+          <association Id="f1271242-0170-493b-8a69-8da0fb6294c8" isDerived="false" sourceEndRoleName="Клієнт" targetEndRoleName="вихід з системи" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="15ea95f5-aa2b-4e82-9fc0-e8b201def7bc" LastKnownName="вихід з системи" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa809e28-9253-4bfa-bb09-60c7a92f766f" name="Клієнт" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3320226e-0b68-4eac-915a-d2edfe62de3e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="191f6c4a-6f80-4c6b-a2ec-1e97220fe6f6" name="вихід з системи" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4f0cd905-8a0d-4a93-b738-8b920aea0eca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c2050852-d37a-4233-8c7e-a47c02a2517f" />
+          </association>
+          <association Id="cd9cf9cf-a357-4a47-9ede-419fbe5d00fe" isDerived="false" sourceEndRoleName="Клієнт" targetEndRoleName="отримання готівки " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1ed29866-28b5-433a-a798-1271e3e1b532" LastKnownName="зняття коштів" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="981fbb33-e52f-4958-844f-d23f96368473" name="Клієнт" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b33eea2d-8b6d-4856-82db-f12ce80077b6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="223ddca8-5143-42ab-afa6-d8e3d1614013" name="отримання готівки " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b3073715-23e9-4385-98c9-8cb7f4f0a133" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="799408c6-f3f2-46c4-9744-c2911b410685" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1ed29866-28b5-433a-a798-1271e3e1b532" name="зняття коштів" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cd8ceea9-c51f-4d04-aa30-53bc2dfe161c" />
+        <targetEnds>
+          <association Id="ce38ce98-0482-44ed-b249-37e6c4c2d51e" isDerived="false" sourceEndRoleName="зняття коштів" targetEndRoleName="Сервер" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="9c1187ef-5c3b-407a-aa75-3a4665acfdb5" LastKnownName="Сервер" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e93c6255-a7a7-4cbd-834b-8c97da8a64fd" name="зняття коштів" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="894517b6-89c4-4810-be27-4459101bce26" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f10dec23-b53d-42ea-bedc-6b44a4e40107" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="006750db-056e-4c60-9398-57cef1bf5870" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="202510f4-f407-429d-a84c-405c1d415fc6" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bcb894a0-4ea8-4c51-adfc-c874d1bcb23b" name="перегляд залишку на рахунку" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cb8b905a-6c48-4c04-bb3e-c6a98c62b5e1" />
+        <targetEnds>
+          <association Id="f630305a-62a5-4086-9c6e-a59468d5556c" isDerived="false" sourceEndRoleName="перегляд залишку на рахунку" targetEndRoleName="Сервер" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="9c1187ef-5c3b-407a-aa75-3a4665acfdb5" LastKnownName="Сервер" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66555404-8daa-4999-a8b6-3b72c6f6bcf5" name="перегляд залишку на рахунку" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c5fda21f-7e46-4763-9ea3-1f68e20d0da1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66df5f76-2f33-4e01-964d-261c3cd3a65f" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cf22d16f-51a0-4d77-917b-a8fa17d82e76" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7e90f0f4-632b-4460-aa92-8c681b5685a5" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9c1187ef-5c3b-407a-aa75-3a4665acfdb5" name="Сервер" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1324807f-153a-4c80-9822-cfa731d692b1" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e68a8553-abcb-482a-93b4-fb3810e868ba" name="вхід в систему" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="edc11d2c-84b5-451f-b677-30d451cfda00" />
+        <targetEnds>
+          <association Id="83db7593-47ca-4eed-b383-2d95dda61818" isDerived="false" sourceEndRoleName="вхід в систему" targetEndRoleName="Сервер" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="9c1187ef-5c3b-407a-aa75-3a4665acfdb5" LastKnownName="Сервер" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7e0e334a-e6cb-4f1a-97a5-618b02af774c" name="вхід в систему" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="90bbdd9e-e27c-4ca2-9b28-c301c6b33377" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="261f2323-4a47-4cc2-8cf8-c4f35579c07d" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3b25ba6d-818c-4f34-bbc0-866067b3f51e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="08faad03-01bf-4204-97bc-5f0bfa1f91ee" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="15ea95f5-aa2b-4e82-9fc0-e8b201def7bc" name="вихід з системи" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cae45ba8-cca9-4786-bb47-b4c4b857f57f" />
+        <targetEnds>
+          <association Id="369d7d71-559d-44a6-baba-6044489a49ad" isDerived="false" sourceEndRoleName="вихід з системи" targetEndRoleName="Сервер" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="9c1187ef-5c3b-407a-aa75-3a4665acfdb5" LastKnownName="Сервер" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c131f281-2c53-45de-b421-15f49e81d7c4" name="вихід з системи" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="31889404-4853-4cfd-add8-dd51b4946bbe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d7e4026c-e753-4e11-ac79-1e2eec67b684" name="Сервер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7d2ae9f2-fbd8-4b07-a7bd-55e36aac90ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="120586d9-a9c8-4b9f-8f09-149d197f6a0b" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="35bbc813-4f96-42d9-aa7a-2f529acea647" name="ivanochko1">
+    <elementDefinition Id="df9790df-e3ab-418d-a357-e10f6890bd27" />
+    <profileInstances>
+      <packageHasProfileInstances Id="606534ae-833b-48df-9254-94f6b9e6713f">
+        <profileInstance Id="7e0f7141-47a8-4c4e-933f-47f781558a88" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="9faf0962-ad0e-43ba-b80e-58f1fe9649e6">
+        <profileInstance Id="bc05b445-10e7-4467-aa02-9cb4cdd25aa3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

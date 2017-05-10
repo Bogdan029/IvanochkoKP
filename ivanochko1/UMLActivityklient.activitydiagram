@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="b8367861-2e48-43c4-81bd-7207c58987df" name="UMLActivityklient" linkedPackageId="41fe2e5f-9e08-42b6-820b-69d2dae467bc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="8ee70a68-264e-4566-9e06-5d0aab2c97f0" name="UMLActivityklient" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="3748c34f-df16-4087-8b78-2992d87600d4" />
+        <nodes>
+          <initialNode Id="6b0d65cf-d07a-4054-8930-a19da08ac9d2" name="Initial1" isLeaf="false">
+            <elementDefinition Id="d6deca93-71d5-45d2-a582-ee8b452fcecb" />
+            <flowNodeTargets>
+              <controlFlow Id="34ae3f67-f301-45da-961e-178df2658061" isLeaf="false">
+                <opaqueActionMoniker Id="63b2575f-985e-4348-869d-22e4dbb8f9e0" LastKnownName="увійти в систему" />
+                <elementDefinition Id="95822731-5b49-428e-9b15-9b9b11b2d1cf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="63b2575f-985e-4348-869d-22e4dbb8f9e0" name="увійти в систему" isLeaf="false">
+            <elementDefinition Id="797b5ea2-e38f-43d0-b5c6-0c2da8b1d720" />
+            <flowNodeTargets>
+              <controlFlow Id="96d3d269-3922-451f-a3a2-430971fc5138" isLeaf="false">
+                <mergeNodeMoniker Id="bedd384a-6f8d-40e8-ae68-655e68488c35" LastKnownName="Merge1" />
+                <elementDefinition Id="af75e71f-dbb7-44aa-a839-13a019a3426d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8f36ffed-73b1-4c6b-bd23-ae4aa57b2930" name="Decision1" isLeaf="false">
+            <elementDefinition Id="e5d182e4-3c93-40b8-8d73-381af6668fe7" />
+            <flowNodeTargets>
+              <controlFlow Id="7c6fc73c-87f2-4531-9589-4b3f50428ead" guard="так" isLeaf="false">
+                <activityFinalNodeMoniker Id="26eef36b-961f-4984-8465-98b927aab0f8" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="1f79fafc-fa49-40bd-b9cd-013a357a7e9d" />
+              </controlFlow>
+              <controlFlow Id="eeea28d6-6847-47e3-a6a1-c99688e1b185" guard="ні" isLeaf="false">
+                <mergeNodeMoniker Id="bedd384a-6f8d-40e8-ae68-655e68488c35" LastKnownName="Merge1" />
+                <elementDefinition Id="c378749f-4bff-4998-821f-cad64118f510" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="98573c41-a6fc-49cd-9fd3-ee6a1b7a3efe" name="зняття коштів" isLeaf="false">
+            <elementDefinition Id="6cd91292-f332-427c-92f3-f73573b6af54" />
+            <flowNodeTargets>
+              <controlFlow Id="48b0cf1a-3a6a-48a5-b955-c027a5b4a1bc" isLeaf="false">
+                <joinNodeMoniker Id="189f30ff-9654-481f-9ce2-4d5bcbed3d83" LastKnownName="Join1" />
+                <elementDefinition Id="1c82ac51-ec09-4420-a90f-4fb5a451cc67" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="70e69989-352d-4c0a-a4df-f0a5c41e2653" name="переглянути залишок на рахунку" isLeaf="false">
+            <elementDefinition Id="ee33f078-4587-4f00-a598-673029fffff9" />
+            <flowNodeTargets>
+              <controlFlow Id="30b03da7-dbee-404e-9013-0824420ddd8f" isLeaf="false">
+                <joinNodeMoniker Id="189f30ff-9654-481f-9ce2-4d5bcbed3d83" LastKnownName="Join1" />
+                <elementDefinition Id="ea75082e-6476-4bf8-894c-4059e9a114f4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="26eef36b-961f-4984-8465-98b927aab0f8" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="660c3345-399a-4417-9f96-04d58e5ec763" />
+          </activityFinalNode>
+          <forkNode Id="452389f7-ec67-4229-9a5a-54da4a755543" name="Fork1" isLeaf="false">
+            <elementDefinition Id="6c7c8421-c71c-46ac-98b3-60421a7f493f" />
+            <flowNodeTargets>
+              <controlFlow Id="d221849e-378c-4938-bea8-446d6dd8d4f3" isLeaf="false">
+                <opaqueActionMoniker Id="98573c41-a6fc-49cd-9fd3-ee6a1b7a3efe" LastKnownName="зняття коштів" />
+                <elementDefinition Id="eac53177-fe15-45ce-87a6-72f3d8d7a0ba" />
+              </controlFlow>
+              <controlFlow Id="9b1ab368-7589-46d7-a8ed-07869ee36056" isLeaf="false">
+                <opaqueActionMoniker Id="70e69989-352d-4c0a-a4df-f0a5c41e2653" LastKnownName="переглянути залишок на рахунку" />
+                <elementDefinition Id="d42bc372-f667-4345-b9fc-0e2dd4cce53b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <joinNode Id="189f30ff-9654-481f-9ce2-4d5bcbed3d83" name="Join1" isLeaf="false">
+            <elementDefinition Id="fda4742e-67d6-4aff-b7fe-7da84678d0de" />
+            <flowNodeTargets>
+              <controlFlow Id="dfaeac5a-f213-4621-bd03-1399d1e39c51" isLeaf="false">
+                <opaqueActionMoniker Id="7be22378-e473-40bc-b511-93a402f0693b" LastKnownName="вийти з системи" />
+                <elementDefinition Id="90aa6f45-d9b2-4f0f-b1c9-4585d74749d7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="7be22378-e473-40bc-b511-93a402f0693b" name="вийти з системи" isLeaf="false">
+            <elementDefinition Id="59815ef5-bc5e-493c-9ce2-7cc36b766bc6" />
+            <flowNodeTargets>
+              <controlFlow Id="2c5d598b-cb56-4101-890c-557f6947d6c4" isLeaf="false">
+                <decisionNodeMoniker Id="8f36ffed-73b1-4c6b-bd23-ae4aa57b2930" LastKnownName="Decision1" />
+                <elementDefinition Id="56a29fe4-5c01-4621-9888-45e2285c30a7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="bedd384a-6f8d-40e8-ae68-655e68488c35" name="Merge1" isLeaf="false">
+            <elementDefinition Id="0f8f603a-8e07-4c5d-b8fa-132c712caa1e" />
+            <flowNodeTargets>
+              <controlFlow Id="2389f12d-d589-4710-a103-ed2fa61a4ae2" isLeaf="false">
+                <forkNodeMoniker Id="452389f7-ec67-4229-9a5a-54da4a755543" LastKnownName="Fork1" />
+                <elementDefinition Id="e8b3fb3d-62d2-446c-9a99-a198ae5c1f38" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="41fe2e5f-9e08-42b6-820b-69d2dae467bc" name="ivanochko1">
+    <elementDefinition Id="df9790df-e3ab-418d-a357-e10f6890bd27" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4714deac-779b-4003-ae5a-f5c31b47fb28">
+        <profileInstance Id="2ec530da-e43b-4cc5-9115-58ad521c460b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ed7aeb61-3a9e-4888-88a1-a5fee191bb71">
+        <profileInstance Id="4887d5b7-6f9c-463d-b3d3-15372dea7dc7" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
